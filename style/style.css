@@ -10,22 +10,23 @@ body {
   width: 100%;
 }
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #eee;
+  color: #091c35;
 }
 
 .header {
   height: 100vh;
-  background-image: 
-  linear-gradient(to right bottom, 
-   rgba(76, 216, 255, 0.8),
-   rgba(30, 108, 217, 0.8)),
-   url('https://images.wallpaperscraft.com/image/single/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg');
-  
-background-size: cover;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(76, 216, 255, 0.8),
+      rgba(30, 108, 217, 0.8)
+    ),
+    url("https://images.wallpaperscraft.com/image/single/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg");
+
+  background-size: cover;
   background-position: top;
   position: relative;
 
@@ -38,7 +39,9 @@ background-size: cover;
   left: 40px;
 }
 
-.brand { font-size: 20px; }
+.brand {
+  font-size: 20px;
+}
 
 .text-box {
   position: absolute;
@@ -77,7 +80,7 @@ background-size: cover;
   padding: 10px 20px;
   display: inline-block;
   border-radius: 100px;
-  transition: all .2s;
+  transition: all 0.2s;
   position: relative;
 }
 
@@ -93,6 +96,45 @@ background-size: cover;
 
 .btn-white {
   background-color: #fff;
-  color: #777;
-font-size: 14px;
+  color: #000;
+  font-size: 14px;
+}
+.sidebar {
+  position: absolute;
+  margin: 20px 20px 30px 20px;
+  width: 25%;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+.card {
+  font-size: small;
+  border-bottom: solid #d3d3d3 2px;
+  margin-bottom: 6px;
+}
+
+.card-header {
+  font-weight: bold;
+  padding: 6px;
+}
+
+.no-route {
+  background-color: #d3d3d3;
+  color: #f00;
+}
+
+.obstacle-found {
+  background-color: #d3d3d3;
+  color: #fff;
+}
+
+.route-found {
+  background-color: #33a532;
+  color: #fff;
+}
+
+.card-details {
+  padding: 3px 6px;
 }
