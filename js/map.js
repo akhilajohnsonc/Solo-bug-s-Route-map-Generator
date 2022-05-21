@@ -13,7 +13,7 @@ const directions = new MapboxDirections({
   profile: "mapbox/driving",
   alternatives: false,
   geometries: "geojson",
-  controls: { instructions: false },
+  controls: { instructions: true },
   flyTo: false,
 });
 
