@@ -1,21 +1,614 @@
 <!DOCTYPE html>
-<head>
-<title>Route map for a solobug</title>
-<link rel="stylesheet" href="style/style.css"></head>
-</body>
-<div class="header">
-	<div class="brand-box">
-		<span class="brand">SoloBug</span>
-	</div>
-	
-	<div class="text-box">
-		<h1 class="heading-primary">
-			<span class="heading-primary-main">Solo Bug's</span>
-			<span class="heading-primary-sub">Route map generater</span>
-		</h1>
-        <h6>Navigation app that finds a route between two user-selected locations and detects whether that route intersects with a low clearance area like a bridge or overpass. If so, the app will automatically look for a new route that avoids the low clearance area.Developed using Direction API and Turf.js.</h6>
-        <br><br>
-		<a href="map.html" class="btn btn-white btn-animated">Launch</a>
-	</div>
-</div>
-<body>
+<!-- saved from url=(0049)https://www.mixo.io/site/ai-vhri-29019/index.html -->
+<html lang="en-US" data-head-attrs="lang">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Navigate Easily | Solo Bug's Route Map Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="sitemap"
+      href="https://www.mixo.io/site/ai-vhri-29019/sitemap.xml"
+    />
+    <link
+      rel="icon"
+      href="./index_files/soloBugsRouteMapGenerator-1675661112619.svg"
+    />
+    <meta
+      name="description"
+      content="Find the Safest Routes with Solo Bug&#39;s Route Map Generator. Get to your destination quickly and safely. Solve your navigation problems with the power of Solo Bug&#39;s Route Map Generator."
+    />
+    <meta property="og:url" content="https://www.mixo.io/site/ai-vhri-29019" />
+    <meta
+      property="og:title"
+      content="Navigate Easily | Solo Bug&#39;s Route Map Generator"
+    />
+    <meta
+      property="og:site_name"
+      content="Solo Bug&#39;s Route Map Generator"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Find the Safest Routes with Solo Bug&#39;s Route Map Generator. Get to your destination quickly and safely. Solve your navigation problems with the power of Solo Bug&#39;s Route Map Generator."
+    />
+    <meta
+      property="og:image"
+      content="https://storage.googleapis.com/mixo-files/uploads/soloBugsRouteMapGenerator-1675661114443.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Navigate Easily | Solo Bug&#39;s Route Map Generator"
+    />
+    <meta
+      property="twitter:url"
+      content="https://www.mixo.io/site/ai-vhri-29019"
+    />
+    <meta
+      property="twitter:title"
+      content="Navigate Easily | Solo Bug&#39;s Route Map Generator"
+    />
+    <meta
+      property="twitter:description"
+      content="Find the Safest Routes with Solo Bug&#39;s Route Map Generator. Get to your destination quickly and safely. Solve your navigation problems with the power of Solo Bug&#39;s Route Map Generator."
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image:src"
+      content="https://storage.googleapis.com/mixo-files/uploads/soloBugsRouteMapGenerator-1675661114443.png"
+    />
+    <meta property="generator" content="îles" />
+    <meta name="head:count" content="18" />
+    <link rel="stylesheet" href="./index_files/style.8e63440b.css" />
+
+    <link
+      rel="modulepreload"
+      href="https://www.mixo.io/site/ai-vhri-29019/assets/iles.add2ce26.js"
+      crossorigin=""
+    />
+    <link
+      rel="modulepreload"
+      href="https://www.mixo.io/site/ai-vhri-29019/assets/vendor-vue.9df171e7.js"
+      crossorigin=""
+    />
+    <link
+      rel="modulepreload"
+      href="https://www.mixo.io/site/ai-vhri-29019/assets/SignupForm.47f3581b.js"
+      crossorigin=""
+    />
+    <link
+      rel="modulepreload"
+      href="https://www.mixo.io/site/ai-vhri-29019/assets/vite.4b47dcbf.js"
+      crossorigin=""
+    />
+    <link
+      rel="modulepreload"
+      href="https://www.mixo.io/site/ai-vhri-29019/assets/GoogleAnalytics.8b967478.js"
+      crossorigin=""
+    />
+    <script
+      type="text/javascript"
+      async=""
+      src="./index_files/js"
+      nonce="f2bf9e90-5c1a-43c5-a132-ed11fee9ea57"
+    ></script>
+    <script async="" src="./index_files/gtm.js.download"></script>
+    <script
+      defer=""
+      referrerpolicy="origin"
+      src="./index_files/s.js.download"
+    ></script>
+    <script nonce="f2bf9e90-5c1a-43c5-a132-ed11fee9ea57">
+      (function (w, d) {
+        !(function (f, g, h, i) {
+          f[h] = f[h] || {};
+          f[h].executed = [];
+          f.zaraz = { deferred: [], listeners: [] };
+          f.zaraz.q = [];
+          f.zaraz._f = function (j) {
+            return function () {
+              var k = Array.prototype.slice.call(arguments);
+              f.zaraz.q.push({ m: j, a: k });
+            };
+          };
+          for (const l of ["track", "set", "debug"]) f.zaraz[l] = f.zaraz._f(l);
+          f.zaraz.init = () => {
+            var m = g.getElementsByTagName(i)[0],
+              n = g.createElement(i),
+              o = g.getElementsByTagName("title")[0];
+            o && (f[h].t = g.getElementsByTagName("title")[0].text);
+            f[h].x = Math.random();
+            f[h].w = f.screen.width;
+            f[h].h = f.screen.height;
+            f[h].j = f.innerHeight;
+            f[h].e = f.innerWidth;
+            f[h].l = f.location.href;
+            f[h].r = g.referrer;
+            f[h].k = f.screen.colorDepth;
+            f[h].n = g.characterSet;
+            f[h].o = new Date().getTimezoneOffset();
+            if (f.dataLayer)
+              for (const s of Object.entries(
+                Object.entries(dataLayer).reduce((t, u) => ({
+                  ...t[1],
+                  ...u[1],
+                }))
+              ))
+                zaraz.set(s[0], s[1], { scope: "page" });
+            f[h].q = [];
+            for (; f.zaraz.q.length; ) {
+              const v = f.zaraz.q.shift();
+              f[h].q.push(v);
+            }
+            n.defer = !0;
+            for (const w of [localStorage, sessionStorage])
+              Object.keys(w || {})
+                .filter((y) => y.startsWith("_zaraz_"))
+                .forEach((x) => {
+                  try {
+                    f[h]["z_" + x.slice(7)] = JSON.parse(w.getItem(x));
+                  } catch {
+                    f[h]["z_" + x.slice(7)] = w.getItem(x);
+                  }
+                });
+            n.referrerPolicy = "origin";
+            n.src =
+              "/cdn-cgi/zaraz/s.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(f[h])));
+            m.parentNode.insertBefore(n, m);
+          };
+          ["complete", "interactive"].includes(g.readyState)
+            ? zaraz.init()
+            : f.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, "zarazData", "script");
+      })(window, document);
+    </script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WFSST2Q");
+    </script>
+    <style type="text/css">
+      @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Medium.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 700;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 900;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Black.woff2")
+          format("woff2");
+      }
+    </style>
+  </head>
+  <body data-head-attrs="">
+    <div id="app">
+      <div>
+        <div
+          class="site-content bg-white overflow-hidden"
+          data-testid="site-content"
+        >
+          <section
+            id="5ypmgdk5zn"
+            class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48"
+            sectionname="hero"
+            sortorder="0"
+            sectioncomponent="Hero"
+          >
+            <div
+              class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24"
+            >
+              <div>
+                <div class="flex items-center space-x-2">
+                  <img
+                    class="w-auto h-8"
+                    src="./index_files/soloBugsRouteMapGenerator-1675661112619.svg"
+                    alt="Solo Bug&#39;s Route Map Generator logo"
+                  />
+                  <p class="font-sans text-xl font-bold text-gray-900">
+                    Solo Bug's Route Map Generator
+                  </p>
+                </div>
+                <div class="mt-14">
+                  <div class="mt-6 sm:max-w-xl">
+                    <h1
+                      class="text-4xl font-black tracking-tight text-gray-900 sm:text-6xl md:text-7xl"
+                    >
+                      Find the Safest Routes with Solo Bug's Route Map
+                      Generator<span class="text-primary">.</span>
+                    </h1>
+                    <h2 class="mt-6 text-lg text-gray-500 sm:text-xl">
+                      Get to your destination quickly and safely. Solve your
+                      navigation problems with the power of Solo Bug's Route Map
+                      Generator.
+                    </h2>
+                  </div>
+                  <div class="mt-10 space-y-4">
+                    <ile-root id="ile-1" data-v-app="" hydrated=""
+                      ><form
+                        class="grid gap-2 grid-cols-1 sm:w-full sm:flex sm:items-center sm:flex-wrap mt-4 sm:max-w-lg"
+                      >
+                        <label for="hero-email" class="sr-only"
+                          >Email address</label
+                        >
+                        <div>
+                          <a
+                            href="map.html"
+                            class="ui-button ui-button-base ui-button-primary"
+                            >Launch</a
+                          >
+                        </div>
+                      </form></ile-root
+                    >
+                    <script></script>
+                    <script type="module" async="">
+                      import {
+                        h as o,
+                        c as a,
+                      } from "/site/ai-vhri-29019/assets/iles.add2ce26.js";
+                      import { c as e } from "/site/ai-vhri-29019/assets/SignupForm.47f3581b.js";
+                      import "/site/ai-vhri-29019/assets/vendor-vue.9df171e7.js";
+                      import "/site/ai-vhri-29019/assets/vite.4b47dcbf.js";
+                      o(
+                        a,
+                        e,
+                        "ile-1",
+                        {
+                          name: "hero",
+                          placeholder: "Enter your email...",
+                          buttonLabel: "Join our waitlist",
+                          siteId: "ai-vhri-29019",
+                          class: "mt-4 sm:max-w-lg",
+                        },
+                        {}
+                      );
+                    </script>
+                  </div>
+                  <!-- Social Proofing --><!-- User Review -->
+                  <div class="mt-6">
+                    <div class="inline-flex items-center">
+                      <img
+                        src="./index_files/female-19.png"
+                        alt="Victoria Riley"
+                        class="object-cover inline-block mr-3 border-2 border-primary rounded-full sm:mr-2 h-14 w-14"
+                      />
+                      <div>
+                        <p
+                          class="sm:pl-2.5 text-base font-black tracking-tight text-gray-800 sm:text-lg"
+                        >
+                          “I never worry about running into low clearance areas
+                          with Solo Bug's Route Map Generator!”
+                        </p>
+                        <p
+                          class="sm:pl-2.5 text-sm sm:text-base font-bold text-gray-500"
+                        >
+                          Victoria Riley
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
+              <div
+                class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+              >
+                <div class="hidden sm:block">
+                  <div
+                    class="absolute inset-y-0 w-screen left-1/2 bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full"
+                  ></div>
+                  <svg
+                    class="absolute -mr-3 top-8 right-1/2 lg:m-0 lg:left-0"
+                    width="404"
+                    height="392"
+                    fill="none"
+                    viewBox="0 0 404 392"
+                  >
+                    <defs>
+                      <pattern
+                        id="837c3e70-6c3a-44e6-8854-cc48c737b659"
+                        x="0"
+                        y="0"
+                        width="20"
+                        height="20"
+                        patternUnits="userSpaceOnUse"
+                      >
+                        <rect
+                          x="0"
+                          y="0"
+                          width="4"
+                          height="4"
+                          class="text-gray-200"
+                          fill="currentColor"
+                        ></rect>
+                      </pattern>
+                    </defs>
+                    <rect
+                      width="404"
+                      height="392"
+                      fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"
+                    ></rect>
+                  </svg>
+                </div>
+                <div
+                  class="relative pl-4 -mr:20 sm:-mr-32 md:-mr-16 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:flex lg:items-center xl:pl-12"
+                >
+                  <img
+                    class="w-full rounded-l-3xl lg:w-auto 2xl:h-full 2xl:max-w-none"
+                    src="./index_files/GPS-navigator_Mesa-de-trabajo-1.svg"
+                    alt="Solo Bug&#39;s Route Map Generator"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="relative pt-16 pb-32 overflow-hidden bg-white space-y-24"
+            sectionname="features"
+            id="ab4ovpbi7u"
+            sortorder="1"
+            sectioncomponent="Features"
+            site-name="Solo Bug&#39;s Route Map Generator"
+            site-id="ai-vhri-29019"
+            site-logo-url="https://storage.googleapis.com/mixo-files/logos/soloBugsRouteMapGenerator-1675661112619.svg"
+          >
+            <div>
+              <div
+                class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-6 xl:gap-12 2xl:gap-24"
+              >
+                <div
+                  class="lg:col-start-2 max-w-xl px-4 mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 space-y-6"
+                >
+                  <!-- Feature -->
+                  <div>
+                    <h2
+                      class="text-4xl font-extrabold tracking-tight text-gray-900"
+                    >
+                      Avoid low clearance areas<span class="text-primary"
+                        >.</span
+                      >
+                    </h2>
+                    <p
+                      class="mt-4 text-lg leading-relaxed text-gray-500 sm:text-xl"
+                    >
+                      By utilizing the latest mapping data, Solo Bug's Route Map
+                      Generator helps you to quickly find routes that avoid low
+                      clearance areas so you can get to your destination safely.
+                    </p>
+                  </div>
+                  <!-- CTA -->
+                  <div></div>
+                  <!-- Review -->
+                </div>
+                <!-- Image -->
+                <div class="lg:col-start-1 mt-12 sm:mt-16 lg:mt-0">
+                  <div
+                    class="pr-4 -sm:ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full lg:flex lg:items-center"
+                  >
+                    <img
+                      class="lg:right-0 w-full lg:absolute lg:w-auto lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl rounded"
+                      src="./index_files/Paper-map-(1)_Mesa-de-trabajo-1.svg"
+                      alt="Avoid low clearance areas"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-6 xl:gap-12 2xl:gap-24"
+              >
+                <div
+                  class="max-w-xl px-4 mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 space-y-6"
+                >
+                  <!-- Feature -->
+                  <div>
+                    <h2
+                      class="text-4xl font-extrabold tracking-tight text-gray-900"
+                    >
+                      Fast and efficient route planning<span
+                        class="text-primary"
+                        >.</span
+                      >
+                    </h2>
+                    <p
+                      class="mt-4 text-lg leading-relaxed text-gray-500 sm:text-xl"
+                    >
+                      Our easy-to-use interface lets you quickly plan routes
+                      between two locations, with just a few clicks. Get your
+                      route in no time!
+                    </p>
+                  </div>
+                  <!-- CTA -->
+                  <div></div>
+                  <!-- Review -->
+                </div>
+                <!-- Image -->
+                <div class="mt-12 sm:mt-16 lg:mt-0">
+                  <div
+                    class="pl-4 sm:-mr-48 sm:-mr-6 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full lg:flex lg:items-center"
+                  >
+                    <img
+                      class="lg:left-0 w-full lg:absolute lg:w-auto lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl rounded"
+                      src="./index_files/Navigation_Mesa-de-trabajo-1.svg"
+                      alt="Fast and efficient route planning"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="py-12 overflow-hidden bg-primary bg-opacity-80 md:py-20"
+            sectionname="testimonials"
+            id="k3zkq62uv8"
+            sortorder="2"
+            sectioncomponent="Testimonials"
+            site-name="Solo Bug&#39;s Route Map Generator"
+            site-id="ai-vhri-29019"
+            site-logo-url="https://storage.googleapis.com/mixo-files/logos/soloBugsRouteMapGenerator-1675661112619.svg"
+          >
+            <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+              <svg
+                class="absolute transform top-full right-full translate-x-1/3 -translate-y-1/4 lg:translate-x-1/2 xl:-translate-y-1/2 rotate-3"
+                width="404"
+                height="404"
+                fill="none"
+                viewBox="0 0 404 404"
+                role="img"
+                aria-labelledby="svg-squares"
+              >
+                <title id="svg-squares">squares</title>
+                <defs>
+                  <pattern
+                    id="ad119f34-7694-4c31-947f-5c9d249b21f3"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect
+                      x="0"
+                      y="0"
+                      width="4"
+                      height="4"
+                      class="text-primary"
+                      fill="currentColor"
+                    ></rect>
+                  </pattern>
+                </defs>
+                <rect
+                  width="404"
+                  height="404"
+                  fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)"
+                ></rect>
+              </svg>
+              <div class="relative">
+                <blockquote>
+                  <div
+                    class="max-w-3xl mx-auto text-xl font-bold leading-7 text-center text-white md:leading-10 md:text-3xl text-shadow-sm"
+                  >
+                    <p>
+                      "It has totally changed how I travel. Planning routes is
+                      so much easier and quicker."
+                    </p>
+                  </div>
+                  <footer class="mt-8">
+                    <div class="md:flex md:items-center md:justify-center">
+                      <div class="md:flex-shrink-0">
+                        <img
+                          src="./index_files/male-31.png"
+                          class="w-10 h-10 mx-auto border-2 border-slate-200 rounded-full shadow-sm object-cover"
+                          alt="Testimonial"
+                        />
+                      </div>
+                      <div
+                        class="mt-3 text-center md:mt-0 md:ml-3 md:flex md:items-center text-shadow-sm"
+                      >
+                        <div class="text-lg font-medium text-white">
+                          James Cary
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <ile-root id="ile-2" data-v-app="" hydrated=""><!----></ile-root>
+      <script></script>
+      <script type="module" async="">
+        import {
+          h as a,
+          c as o,
+        } from "/site/ai-vhri-29019/assets/iles.add2ce26.js";
+        import { _ as r } from "/site/ai-vhri-29019/assets/GoogleAnalytics.8b967478.js";
+        import "/site/ai-vhri-29019/assets/vendor-vue.9df171e7.js";
+        a(o, r, "ile-2", { g4aId: void 0 }, {});
+      </script>
+    </div>
+    <script
+      defer=""
+      src="./index_files/vaafb692b2aea4879b33c060e79fe94621666317369993"
+      integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+      data-cf-beacon='{"rayId":"79517779cb1bbb74","version":"2022.11.3","r":1,"token":"331da11241b54612b9793dbc3ff2612a","si":100}'
+      crossorigin="anonymous"
+    ></script>
+
+    <div>
+      <!-- Google Tag Manager -->
+
+      <!-- End Google Tag Manager -->
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript
+        ><iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-WFSST2Q"
+          height="0"
+          width="0"
+          style="display: none; visibility: hidden"
+        ></iframe
+      ></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    </div>
+    <iframe
+      frameborder="0"
+      scrolling="no"
+      style="background-color: transparent; border: 0px; display: none"
+      src="./index_files/saved_resource.html"
+    ></iframe>
+    <div
+      id="GOOGLE_INPUT_CHEXT_FLAG"
+      input=""
+      input_stat='{"tlang":true,"tsbc":true,"pun":true,"mk":true,"ss":true}'
+      style="display: none"
+    ></div>
+    <div id="torrent-scanner-popup" style="display: none"></div>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/css/blur.css"
+      class="loom-blur-styles"
+    />
+  </body>
+  <loom-container id="lo-engage-ext-container"
+    ><loom-shadow classname="resolved"></loom-shadow></loom-container
+  ><loom-container id="lo-companion-container"
+    ><loom-shadow classname="resolved"></loom-shadow
+  ></loom-container>
+</html>
